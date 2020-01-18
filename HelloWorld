@@ -1,2 +1,21 @@
-my_string = "Hello, World!"
-print(my_string)
+#---------------------------------
+# easy version
+# message = "hello world"
+# print(message)
+
+#---------------------------------
+# better version 
+# Suppose this is foo.py.
+
+print("before import")
+import math
+
+print("before fucntionA")
+def functionA():
+    print("Hello World")
+
+print("before __name__ guard")
+if __name__ == '__main__': 
+    functionA()
+
+print("after __name__ guard")
